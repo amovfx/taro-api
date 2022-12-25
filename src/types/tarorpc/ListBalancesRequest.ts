@@ -1,18 +1,18 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface ListBalancesRequest {
-  'assetId'?: (boolean);
-  'famKey'?: (boolean);
-  'assetFilter'?: (Buffer | Uint8Array | string);
-  'familyKeyFilter'?: (Buffer | Uint8Array | string);
-  'groupBy'?: "assetId"|"famKey";
+  'asset_id'?: (boolean);
+  'fam_key'?: (boolean);
+  'asset_filter'?: (Buffer | Uint8Array | string);
+  'family_key_filter'?: (Buffer | Uint8Array | string);
+  'group_by'?: "asset_id"|"fam_key";
 }
 
 export interface ListBalancesRequest__Output {
-  'assetId'?: (boolean);
-  'famKey'?: (boolean);
-  'assetFilter': (Buffer);
-  'familyKeyFilter': (Buffer);
-  'groupBy': "assetId"|"famKey";
+  'asset_id'?: (boolean);
+  'fam_key'?: (boolean);
+  'asset_filter': (Buffer);
+  'family_key_filter': (Buffer);
+  'group_by': "asset_id"|"fam_key";
 }

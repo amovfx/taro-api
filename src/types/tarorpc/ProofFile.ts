@@ -1,12 +1,12 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface ProofFile {
-  'rawProof'?: (Buffer | Uint8Array | string);
-  'genesisPoint'?: (string);
+  'raw_proof'?: (Buffer | Uint8Array | string);
+  'genesis_point'?: (string);
 }
 
 export interface ProofFile__Output {
-  'rawProof': (Buffer);
-  'genesisPoint': (string);
+  'raw_proof': (Buffer);
+  'genesis_point': (string);
 }

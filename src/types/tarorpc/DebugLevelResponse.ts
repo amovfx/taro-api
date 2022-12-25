@@ -1,10 +1,10 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface DebugLevelResponse {
-  'subSystems'?: (string);
+  'sub_systems'?: (string);
 }
 
 export interface DebugLevelResponse__Output {
-  'subSystems': (string);
+  'sub_systems': (string);
 }

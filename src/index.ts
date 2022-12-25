@@ -3,6 +3,8 @@ import * as grpc from "@grpc/grpc-js";
 import * as protoLoader from "@grpc/proto-loader";
 import { ProtoGrpcType } from "./types/taro";
 import { TaroClient } from "./types/tarorpc/Taro";
+import { GetInfoRequest } from "./types/tarorpc/GetInfoRequest";
+import { GetInfoResponse__Output } from "./types/tarorpc/GetInfoResponse";
 import { ListAssetResponse__Output } from "./types/tarorpc/ListAssetResponse";
 import { ListBalancesRequest } from "./types/tarorpc/ListBalancesRequest";
 import { ListBalancesResponse__Output } from "./types/tarorpc/ListBalancesResponse";
@@ -106,6 +108,18 @@ export class TaroApi {
 
   constructor(client: TaroClient) {
     this.client = client;
+  }
+
+  async getInfo(
+    request: GetInfoRequest
+  ): Promise<GetInfoResponse__Output> {
+    return new Promise((resolve, reject) => {
+      this.client.GetInfo(request, (error, response) => {
+        if (error) reject(error);
+
+        resolve(<GetInfoResponse__Output>response);
+      });
+    });
   }
 
   /**

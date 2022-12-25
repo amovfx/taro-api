@@ -1,4 +1,4 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 import type { Addr as _tarorpc_Addr, Addr__Output as _tarorpc_Addr__Output } from '../tarorpc/Addr';
 

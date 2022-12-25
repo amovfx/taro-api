@@ -1,10 +1,10 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface SendAssetRequest {
-  'taroAddr'?: (string);
+  'taro_addr'?: (string);
 }
 
 export interface SendAssetRequest__Output {
-  'taroAddr': (string);
+  'taro_addr': (string);
 }

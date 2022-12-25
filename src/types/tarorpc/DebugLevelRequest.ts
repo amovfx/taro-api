@@ -1,12 +1,12 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface DebugLevelRequest {
   'show'?: (boolean);
-  'levelSpec'?: (string);
+  'level_spec'?: (string);
 }
 
 export interface DebugLevelRequest__Output {
   'show': (boolean);
-  'levelSpec': (string);
+  'level_spec': (string);
 }

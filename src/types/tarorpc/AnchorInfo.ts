@@ -1,18 +1,18 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface AnchorInfo {
-  'anchorTx'?: (Buffer | Uint8Array | string);
-  'anchorTxid'?: (Buffer | Uint8Array | string);
-  'anchorBlockHash'?: (Buffer | Uint8Array | string);
-  'anchorOutpoint'?: (string);
-  'internalKey'?: (Buffer | Uint8Array | string);
+  'anchor_tx'?: (Buffer | Uint8Array | string);
+  'anchor_txid'?: (Buffer | Uint8Array | string);
+  'anchor_block_hash'?: (Buffer | Uint8Array | string);
+  'anchor_outpoint'?: (string);
+  'internal_key'?: (Buffer | Uint8Array | string);
 }
 
 export interface AnchorInfo__Output {
-  'anchorTx': (Buffer);
-  'anchorTxid': (Buffer);
-  'anchorBlockHash': (Buffer);
-  'anchorOutpoint': (string);
-  'internalKey': (Buffer);
+  'anchor_tx': (Buffer);
+  'anchor_txid': (Buffer);
+  'anchor_block_hash': (Buffer);
+  'anchor_outpoint': (string);
+  'internal_key': (Buffer);
 }

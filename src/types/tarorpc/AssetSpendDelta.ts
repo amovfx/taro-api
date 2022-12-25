@@ -1,17 +1,17 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 import type { Long } from '@grpc/proto-loader';
 
 export interface AssetSpendDelta {
-  'assetId'?: (Buffer | Uint8Array | string);
-  'oldScriptKey'?: (Buffer | Uint8Array | string);
-  'newScriptKey'?: (Buffer | Uint8Array | string);
-  'newAmt'?: (number | string | Long);
+  'asset_id'?: (Buffer | Uint8Array | string);
+  'old_script_key'?: (Buffer | Uint8Array | string);
+  'new_script_key'?: (Buffer | Uint8Array | string);
+  'new_amt'?: (number | string | Long);
 }
 
 export interface AssetSpendDelta__Output {
-  'assetId': (Buffer);
-  'oldScriptKey': (Buffer);
-  'newScriptKey': (Buffer);
-  'newAmt': (string);
+  'asset_id': (Buffer);
+  'old_script_key': (Buffer);
+  'new_script_key': (Buffer);
+  'new_amt': (string);
 }

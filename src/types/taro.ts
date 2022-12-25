@@ -28,6 +28,8 @@ export interface ProtoGrpcType {
     DecodeAddrRequest: MessageTypeDefinition
     ExportProofRequest: MessageTypeDefinition
     GenesisInfo: MessageTypeDefinition
+    GetInfoRequest: MessageTypeDefinition
+    GetInfoResponse: MessageTypeDefinition
     ImportProofRequest: MessageTypeDefinition
     ImportProofResponse: MessageTypeDefinition
     ListAssetRequest: MessageTypeDefinition

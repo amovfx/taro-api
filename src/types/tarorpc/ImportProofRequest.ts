@@ -1,12 +1,12 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface ImportProofRequest {
-  'proofFile'?: (Buffer | Uint8Array | string);
-  'genesisPoint'?: (string);
+  'proof_file'?: (Buffer | Uint8Array | string);
+  'genesis_point'?: (string);
 }
 
 export interface ImportProofRequest__Output {
-  'proofFile': (Buffer);
-  'genesisPoint': (string);
+  'proof_file': (Buffer);
+  'genesis_point': (string);
 }

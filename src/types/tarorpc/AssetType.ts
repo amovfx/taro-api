@@ -1,4 +1,4 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 export enum AssetType {
   NORMAL = 0,

@@ -1,12 +1,12 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface ExportProofRequest {
-  'assetId'?: (Buffer | Uint8Array | string);
-  'scriptKey'?: (Buffer | Uint8Array | string);
+  'asset_id'?: (Buffer | Uint8Array | string);
+  'script_key'?: (Buffer | Uint8Array | string);
 }
 
 export interface ExportProofRequest__Output {
-  'assetId': (Buffer);
-  'scriptKey': (Buffer);
+  'asset_id': (Buffer);
+  'script_key': (Buffer);
 }

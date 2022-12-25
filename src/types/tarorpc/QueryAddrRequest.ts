@@ -1,17 +1,17 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 import type { Long } from '@grpc/proto-loader';
 
 export interface QueryAddrRequest {
-  'createdAfter'?: (number | string | Long);
-  'createdBefore'?: (number | string | Long);
+  'created_after'?: (number | string | Long);
+  'created_before'?: (number | string | Long);
   'limit'?: (number);
   'offset'?: (number);
 }
 
 export interface QueryAddrRequest__Output {
-  'createdAfter': (string);
-  'createdBefore': (string);
+  'created_after': (string);
+  'created_before': (string);
   'limit': (number);
   'offset': (number);
 }

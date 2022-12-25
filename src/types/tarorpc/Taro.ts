@@ -1,4 +1,4 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 import type * as grpc from '@grpc/grpc-js'
 import type { MethodDefinition } from '@grpc/proto-loader'
@@ -9,6 +9,8 @@ import type { DebugLevelRequest as _tarorpc_DebugLevelRequest, DebugLevelRequest
 import type { DebugLevelResponse as _tarorpc_DebugLevelResponse, DebugLevelResponse__Output as _tarorpc_DebugLevelResponse__Output } from '../tarorpc/DebugLevelResponse';
 import type { DecodeAddrRequest as _tarorpc_DecodeAddrRequest, DecodeAddrRequest__Output as _tarorpc_DecodeAddrRequest__Output } from '../tarorpc/DecodeAddrRequest';
 import type { ExportProofRequest as _tarorpc_ExportProofRequest, ExportProofRequest__Output as _tarorpc_ExportProofRequest__Output } from '../tarorpc/ExportProofRequest';
+import type { GetInfoRequest as _tarorpc_GetInfoRequest, GetInfoRequest__Output as _tarorpc_GetInfoRequest__Output } from '../tarorpc/GetInfoRequest';
+import type { GetInfoResponse as _tarorpc_GetInfoResponse, GetInfoResponse__Output as _tarorpc_GetInfoResponse__Output } from '../tarorpc/GetInfoResponse';
 import type { ImportProofRequest as _tarorpc_ImportProofRequest, ImportProofRequest__Output as _tarorpc_ImportProofRequest__Output } from '../tarorpc/ImportProofRequest';
 import type { ImportProofResponse as _tarorpc_ImportProofResponse, ImportProofResponse__Output as _tarorpc_ImportProofResponse__Output } from '../tarorpc/ImportProofResponse';
 import type { ListAssetRequest as _tarorpc_ListAssetRequest, ListAssetRequest__Output as _tarorpc_ListAssetRequest__Output } from '../tarorpc/ListAssetRequest';
@@ -65,6 +67,15 @@ export interface TaroClient extends grpc.Client {
   exportProof(argument: _tarorpc_ExportProofRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tarorpc_ProofFile__Output>): grpc.ClientUnaryCall;
   exportProof(argument: _tarorpc_ExportProofRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tarorpc_ProofFile__Output>): grpc.ClientUnaryCall;
   exportProof(argument: _tarorpc_ExportProofRequest, callback: grpc.requestCallback<_tarorpc_ProofFile__Output>): grpc.ClientUnaryCall;
+  
+  GetInfo(argument: _tarorpc_GetInfoRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
+  GetInfo(argument: _tarorpc_GetInfoRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
+  GetInfo(argument: _tarorpc_GetInfoRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
+  GetInfo(argument: _tarorpc_GetInfoRequest, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
+  getInfo(argument: _tarorpc_GetInfoRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
+  getInfo(argument: _tarorpc_GetInfoRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
+  getInfo(argument: _tarorpc_GetInfoRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
+  getInfo(argument: _tarorpc_GetInfoRequest, callback: grpc.requestCallback<_tarorpc_GetInfoResponse__Output>): grpc.ClientUnaryCall;
   
   ImportProof(argument: _tarorpc_ImportProofRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tarorpc_ImportProofResponse__Output>): grpc.ClientUnaryCall;
   ImportProof(argument: _tarorpc_ImportProofRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tarorpc_ImportProofResponse__Output>): grpc.ClientUnaryCall;
@@ -167,6 +178,8 @@ export interface TaroHandlers extends grpc.UntypedServiceImplementation {
   
   ExportProof: grpc.handleUnaryCall<_tarorpc_ExportProofRequest__Output, _tarorpc_ProofFile>;
   
+  GetInfo: grpc.handleUnaryCall<_tarorpc_GetInfoRequest__Output, _tarorpc_GetInfoResponse>;
+  
   ImportProof: grpc.handleUnaryCall<_tarorpc_ImportProofRequest__Output, _tarorpc_ImportProofResponse>;
   
   ListAssets: grpc.handleUnaryCall<_tarorpc_ListAssetRequest__Output, _tarorpc_ListAssetResponse>;
@@ -194,6 +207,7 @@ export interface TaroDefinition extends grpc.ServiceDefinition {
   DebugLevel: MethodDefinition<_tarorpc_DebugLevelRequest, _tarorpc_DebugLevelResponse, _tarorpc_DebugLevelRequest__Output, _tarorpc_DebugLevelResponse__Output>
   DecodeAddr: MethodDefinition<_tarorpc_DecodeAddrRequest, _tarorpc_Addr, _tarorpc_DecodeAddrRequest__Output, _tarorpc_Addr__Output>
   ExportProof: MethodDefinition<_tarorpc_ExportProofRequest, _tarorpc_ProofFile, _tarorpc_ExportProofRequest__Output, _tarorpc_ProofFile__Output>
+  GetInfo: MethodDefinition<_tarorpc_GetInfoRequest, _tarorpc_GetInfoResponse, _tarorpc_GetInfoRequest__Output, _tarorpc_GetInfoResponse__Output>
   ImportProof: MethodDefinition<_tarorpc_ImportProofRequest, _tarorpc_ImportProofResponse, _tarorpc_ImportProofRequest__Output, _tarorpc_ImportProofResponse__Output>
   ListAssets: MethodDefinition<_tarorpc_ListAssetRequest, _tarorpc_ListAssetResponse, _tarorpc_ListAssetRequest__Output, _tarorpc_ListAssetResponse__Output>
   ListBalances: MethodDefinition<_tarorpc_ListBalancesRequest, _tarorpc_ListBalancesResponse, _tarorpc_ListBalancesRequest__Output, _tarorpc_ListBalancesResponse__Output>

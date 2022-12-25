@@ -1,22 +1,22 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 
 export interface GenesisInfo {
-  'genesisPoint'?: (string);
+  'genesis_point'?: (string);
   'name'?: (string);
   'meta'?: (Buffer | Uint8Array | string);
-  'assetId'?: (Buffer | Uint8Array | string);
-  'outputIndex'?: (number);
-  'genesisBootstrapInfo'?: (Buffer | Uint8Array | string);
+  'asset_id'?: (Buffer | Uint8Array | string);
+  'output_index'?: (number);
+  'genesis_bootstrap_info'?: (Buffer | Uint8Array | string);
   'version'?: (number);
 }
 
 export interface GenesisInfo__Output {
-  'genesisPoint': (string);
+  'genesis_point': (string);
   'name': (string);
   'meta': (Buffer);
-  'assetId': (Buffer);
-  'outputIndex': (number);
-  'genesisBootstrapInfo': (Buffer);
+  'asset_id': (Buffer);
+  'output_index': (number);
+  'genesis_bootstrap_info': (Buffer);
   'version': (number);
 }

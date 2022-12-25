@@ -1,21 +1,21 @@
-// Original file: protos/taro.proto
+// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
 
 import type { Long } from '@grpc/proto-loader';
 
 export interface AssetOutput {
-  'anchorPoint'?: (string);
-  'assetId'?: (Buffer | Uint8Array | string);
-  'scriptKey'?: (Buffer | Uint8Array | string);
+  'anchor_point'?: (string);
+  'asset_id'?: (Buffer | Uint8Array | string);
+  'script_key'?: (Buffer | Uint8Array | string);
   'amount'?: (number | string | Long);
-  'newProofBlob'?: (Buffer | Uint8Array | string);
-  'splitCommitProof'?: (Buffer | Uint8Array | string);
+  'new_proof_blob'?: (Buffer | Uint8Array | string);
+  'split_commit_proof'?: (Buffer | Uint8Array | string);
 }
 
 export interface AssetOutput__Output {
-  'anchorPoint': (string);
-  'assetId': (Buffer);
-  'scriptKey': (Buffer);
+  'anchor_point': (string);
+  'asset_id': (Buffer);
+  'script_key': (Buffer);
   'amount': (string);
-  'newProofBlob': (Buffer);
-  'splitCommitProof': (Buffer);
+  'new_proof_blob': (Buffer);
+  'split_commit_proof': (Buffer);
 }
