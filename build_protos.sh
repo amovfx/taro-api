@@ -31,7 +31,8 @@ else
         echo "Proto file $1 does not exist"
         exit 1
     fi
-    PROTO_FILE=$1
+    echo "Copying $1 to $PROTO_FILE"
+    cp $1 $PROTO_FILE
 fi
 
 #Generate Javascript code

@@ -1,4 +1,4 @@
-// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
+// Original file: protos/taro.proto
 
 import type { TaroTransfer as _tarorpc_TaroTransfer, TaroTransfer__Output as _tarorpc_TaroTransfer__Output } from '../tarorpc/TaroTransfer';
 import type { Long } from '@grpc/proto-loader';

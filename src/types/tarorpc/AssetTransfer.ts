@@ -1,4 +1,4 @@
-// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
+// Original file: protos/taro.proto
 
 import type { AssetSpendDelta as _tarorpc_AssetSpendDelta, AssetSpendDelta__Output as _tarorpc_AssetSpendDelta__Output } from '../tarorpc/AssetSpendDelta';
 import type { Long } from '@grpc/proto-loader';

@@ -1,4 +1,4 @@
-// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
+// Original file: protos/taro.proto
 
 import type { AddrEvent as _tarorpc_AddrEvent, AddrEvent__Output as _tarorpc_AddrEvent__Output } from '../tarorpc/AddrEvent';
 

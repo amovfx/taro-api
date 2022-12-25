@@ -1,4 +1,4 @@
-// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
+// Original file: protos/taro.proto
 
 import type { AssetType as _tarorpc_AssetType } from '../tarorpc/AssetType';
 import type { Long } from '@grpc/proto-loader';

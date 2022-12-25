@@ -1,4 +1,4 @@
-// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
+// Original file: protos/taro.proto
 
 import type { AssetTransfer as _tarorpc_AssetTransfer, AssetTransfer__Output as _tarorpc_AssetTransfer__Output } from '../tarorpc/AssetTransfer';
 

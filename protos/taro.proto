@@ -87,6 +87,11 @@ service Taro {
     proof file information the receiver needs to fully receive the asset.
     */
     rpc SendAsset (SendAssetRequest) returns (SendAssetResponse);
+
+    /* tarocli: `getinfo`
+    GetInfo returns the information for the node.
+    */
+    rpc GetInfo (GetInfoRequest) returns (GetInfoResponse);
 }
 
 enum AssetType {
@@ -553,4 +558,14 @@ message SendAssetResponse {
     TaroTransfer taro_transfer = 4;
 
     int64 total_fee_sats = 5;
+}
+
+message GetInfoRequest {
+}
+
+message GetInfoResponse {
+    string version = 1;
+    string lndversion = 2;
+    string network = 3;
+    int64 assets = 4;
 }

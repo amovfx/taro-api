@@ -34,7 +34,6 @@ import { ListTransfersResponse__Output } from "./types/tarorpc/ListTransfersResp
  */
 
 export default interface TaroClientOptions {
-
   /**
    * @socket Taro daemon's host and port in `host:port` format.
    */
@@ -110,11 +109,9 @@ export class TaroApi {
     this.client = client;
   }
 
-  async getInfo(
-    request: GetInfoRequest
-  ): Promise<GetInfoResponse__Output> {
+  async getInfo(): Promise<GetInfoResponse__Output> {
     return new Promise((resolve, reject) => {
-      this.client.GetInfo(request, (error, response) => {
+      this.client.GetInfo({}, (error, response) => {
         if (error) reject(error);
 
         resolve(<GetInfoResponse__Output>response);

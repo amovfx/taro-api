@@ -1,4 +1,4 @@
-// Original file: /Users/andrew/git/taro/tarorpc/taro.proto
+// Original file: protos/taro.proto
 
 import type { PrevInputAsset as _tarorpc_PrevInputAsset, PrevInputAsset__Output as _tarorpc_PrevInputAsset__Output } from '../tarorpc/PrevInputAsset';
 import type { AssetOutput as _tarorpc_AssetOutput, AssetOutput__Output as _tarorpc_AssetOutput__Output } from '../tarorpc/AssetOutput';
